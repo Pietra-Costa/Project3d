@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d Project | Pietra.dev</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <img class="image-gradient" src="assets/gradient.png" alt="gradient">
     <div class="layer-blur"></div>
 
     <div class="container">
         <header>
-            <h1 class="logo">PIETRA.DEV</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">PIETRA.DEV</h1>
 
             <nav>
-                <a href="#">COMPANY</a>
-                <a href="#">FEATURES</a>
-                <a href="#">RESOURCES</a>
-                <a href="#">DOCS</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="#">EMPRESA</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">FUNCIONALIDADES</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">MATERIAIS</a>
+                <a data-aos="fade-down" data-aos-duration="3500" href="#">DOCUMENTAÇÃO</a>
             </nav>
 
-            <button class="btn-signing">SIGN IN</button>
+            <button data-aos="fade-down" data-aos-duration="4000" class="btn-signing">SIGN IN</button>
         </header>
 
-        <div class="content">
-            
-        </div>
+        <main>
+            <div class="content">
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="1500" class="tag-box">
+                    <div class="tag">APRESENTANDO  &wedbar;</div>
+                </div>
+
+
+                <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="2000">EMAIL POWERED <br> PARA DESENVOLVEDORES</h1>
+                <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    class="description" data-aos-duration="2000">Uma nova maneira de integrar mensagens nas suas aplicações de forma simples, rápida e escalável.</p>
+
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    class="buttons" data-aos-duration="2500">
+                    <a href="#" class="btn-get-started">DOCUMENTAÇÃO</a>
+                    <a href="#" class="btn-signing-main">INICIAR</a>
+                </div>
+            </div>
     </div>
+    </main>
+
+    <spline-viewer data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+        data-aos-duration="2500" class="robot"
+        url="https://prod.spline.design/Cn6ysSpbqXaoLaki/scene.splinecode"></spline-viewer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>
